@@ -1,0 +1,18 @@
+{
+  "name": "html-version-check-webpack-plugin",
+  "version": "0.0.2",
+  "description": "用于检查 SPA 中的 index.html 是否缓存，并于缓存状态时执行更新操作的 webpack plugin。如由 vue 构建的 SPA 应用。",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "author": "zoux",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoux/html-version-check-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoux/html-version-check-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/zoux/html-version-check-webpack-plugin#readme"
+}

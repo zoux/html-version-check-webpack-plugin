@@ -4,7 +4,9 @@ function getVersionMeta (version) {
   `
 }
 
-function getCheckScript (version) {
+function getCheckScript (options) {
+  const { version, versionJSPublicPath, versionJSFileName } = options
+
   return `
     <script>
       function versionCheck () {
@@ -24,7 +26,7 @@ function getCheckScript (version) {
         }
 
         const versionScript = document.createElement('script')
-        versionScript.src = './__version__.js?now=' + new Date().getTime()
+        versionScript.src = '${versionJSPublicPath}${versionJSFileName}?now=' + new Date().getTime()
         document.querySelector('head').appendChild(versionScript)
       }
       

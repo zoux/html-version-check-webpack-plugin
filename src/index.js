@@ -6,6 +6,7 @@ function HtmlVersionCheckWebpackPlugin (options) {
     enable: false,
     version: new Date().getTime(),
     htmlFileName: 'index.html',
+    versionJSPublicPath: './',
     versionJSFileName: '__version__.js',
     ...options
   }
@@ -35,7 +36,7 @@ function writeVersionMetaAndScript (compilation) {
 
   const headEndKeyword = '</head>'
   const headEndPosition = indexHtmlContent.indexOf(headEndKeyword)
-  indexHtmlContent = indexHtmlContent.slice(0, headEndPosition) + getCheckScript(this.options.version) + indexHtmlContent.slice(headEndPosition)
+  indexHtmlContent = indexHtmlContent.slice(0, headEndPosition) + getCheckScript(this.options) + indexHtmlContent.slice(headEndPosition)
 
   compilation.assets[this.options.htmlFileName] = createAsset(indexHtmlContent)
 }

@@ -30,6 +30,7 @@ module.exports = {
 * `enable` `<Boolean>` 默认值 `false` - 是否启用插件
 * `version` `<String>` 默认值 `new Date().getTime()` - 生成的版本号，作为检查版本是否一致的比较值
 * `htmlFileName`  `<String>` 默认值 `index.html` - 项目构建的 html 文件名，插件将会根据文件名找到 html 并写入 version
+* `versionJSPublicPath` `<String>` 默认值 `./` - 插件生成的用于服务端存储 version 的 js 文件地址前缀
 * `versionJSFileName` `<String>` 默认值 `__version__.js` - 插件生成的用于服务端存储 version 的 js 文件名
 
 

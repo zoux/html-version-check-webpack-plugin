@@ -1,6 +1,6 @@
 {
   "name": "html-version-check-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "用于检查 SPA 中的 index.html 是否缓存，并于缓存状态时执行更新操作的 webpack plugin。如由 vue 构建的 SPA 应用。",
   "main": "src/index.js",
   "scripts": {
